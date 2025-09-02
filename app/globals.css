@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --radius: 1rem;
+}
+
+html, body {
+  @apply bg-slate-50 text-slate-900;
+}
+
+.container {
+  @apply mx-auto max-w-6xl px-4;
+}
+
+.card {
+  @apply bg-white rounded-card shadow-soft border border-slate-100;
+}
+.input {
+  @apply w-full rounded-xl border border-slate-300 px-4 py-3 focus:outline-none focus:ring-2 focus:ring-brand-500;
+}
+.label {
+  @apply text-sm font-medium text-slate-600;
+}
+.btn {
+  @apply inline-flex items-center justify-center rounded-2xl px-4 py-2 font-semibold;
+}
+.btn-primary { @apply bg-brand-600 text-white hover:bg-brand-700; }
+.btn-ghost { @apply hover:bg-slate-100; }
+.pill { @apply rounded-full border px-3 py-1 text-sm; }
